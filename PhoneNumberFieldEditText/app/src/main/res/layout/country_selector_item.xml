@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/country_img"
+        android:src="@drawable/country_pk"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PK"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:id="@+id/country_short_name"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/country_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/country_short_name"
+        android:text="+92"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/country_code"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/format"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

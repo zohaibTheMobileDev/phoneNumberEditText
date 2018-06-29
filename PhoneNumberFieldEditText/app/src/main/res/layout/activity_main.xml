@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zohaib.app.phonenumberfieldedittext.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerInParent="true">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/countrySelectorSpinner"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/PhoneEditText"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:textColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@+id/countrySelectorSpinner"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/PhoneEditText"
+            android:layout_alignRight="@+id/PhoneEditText"
+            android:layout_alignLeft="@+id/PhoneEditText"
+            android:layout_alignBottom="@+id/PhoneEditText"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:textSize="12sp"
+            android:id="@+id/PhoneTextView"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
